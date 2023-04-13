@@ -8,7 +8,7 @@ app.use('/',require('./routes/'))
 
 
 
-app.listen(8000, function(err){
+app.listen(process.env.PORT || 8000, function(err){
     if(err){
         console.log('error:',err);
     }
