@@ -12,11 +12,8 @@ app.use('/',require('./routes'))
 
 
 
-app.listen(process.env.PORT || 8000, function(err){
-    if(err){
-        console.log('error:',err);
-    }
-   console.log('server is running on :');
-});
+app.listen(process.env.PORT || 3000,()=>{
+    console.log('backend running')
+})
 
 module.exports = app;
