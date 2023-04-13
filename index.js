@@ -1,8 +1,9 @@
 const express = require('express');
-const db = require('./mysql/sql');
 const app = express();
+const db = require('./mysql/sql');
 
 app.use(express.json());
+
 app.use('/',require('./routes/'))
 
 
@@ -14,3 +15,5 @@ app.listen(process.env.PORT || 8000, function(err){
     }
    console.log('server is running on :');
 });
+
+module.exports = app;
