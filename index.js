@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const db = require('./mysql/sql');
+const cors = require('cors');
 
 app.use(express.json());
 
